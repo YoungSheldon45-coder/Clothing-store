@@ -1,0 +1,38 @@
+{
+  "data": {
+      "cartCreate": {
+          "cart": {
+              "id": "gid://shopify/Cart/Z2NwLXVzLWNlbnRyYWwxOjAxSjkwNkUwTjM3RVpCSEtUVFZXMThRTkcx?key=07a2eefc7c9cf25bfac3c0d90f8968a8",
+              "createdAt": "2024-09-30T00:49:05Z",
+              "updatedAt": "2024-09-30T00:49:05Z",
+              "lines": {
+                  "edges": [
+                      {
+                          "node": {
+                              "id": "gid://shopify/CartLine/7077f1a1-b4a8-4c53-83f7-3f0a950e49b3?cart=Z2NwLXVzLWNlbnRyYWwxOjAxSjkwNkUwTjM3RVpCSEtUVFZXMThRTkcx",
+                              "merchandise": {
+                                  "id": "gid://shopify/ProductVariant/43696903847958",
+                                  "title": "Small / Green",
+                                  "image": {
+                                      "id": "gid://shopify/ProductImage/39774600036374",
+                                      "url": "https://cdn.shopify.com/s/files/1/0688/1755/1382/products/GreenHoodie01.jpg?v=1675455175"
+                                  }
+                              }
+                          }
+                      }
+                  ]
+              },
+              "cost": {
+                  "totalAmount": {
+                      "amount": "90.0",
+                      "currencyCode": "CAD"
+                  },
+                  "subtotalAmount": {
+                      "amount": "90.0",
+                      "currencyCode": "CAD"
+                  }
+              }
+          }
+      }
+  }
+}

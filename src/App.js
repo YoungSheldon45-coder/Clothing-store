@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import Categories from './Components/Categories';
+import LandingPage from './Components/LandingPage';
+import AllProducts from './Components/AllProducts';
+import SingleProduct from './Components/SingleProduct';
+
 
 function App() {
+  const [whichPageIsShowing, setWhichPageIsShowing] = useState('landingPage');
+  const [product, setProduct] = useState('slides');
+
+  useEffect(()=>{
+    renderPage();
+  },[whichPageIsShowing]);
+  
+  const renderPage = () => {
+    switch (whichPageIsShowing) {
+      case 'landingPage':
+        return <LandingPage setWhichPageIsShowing={setWhichPageIsShowing} setProduct={setProduct}/>;
+      case 'categoriesPage':
+        return <Categories setWhichPageIsShowing={setWhichPageIsShowing}/>;
+      case 'AllProducts':
+        return <AllProducts setWhichPageIsShowing={setWhichPageIsShowing} setProduct={setProduct}/>
+      case 'SingleProduct':
+        return <SingleProduct setWhichPageIsShowing={setWhichPageIsShowing} product={product}/>
+      default:
+        return <LandingPage setWhichPageIsShowing={setWhichPageIsShowing}/>; // Default fallback to the landing page if no valid option
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-main-div'>
+      {renderPage()}
     </div>
   );
 }

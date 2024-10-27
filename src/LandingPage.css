@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .nav-div {
+    background-color: #000000;
+    height: 7rem;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.landing-page-main-div {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: white;
+    overflow: hidden;
+}
+
+.slide-button {
+    background: white;
+    padding: 8px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 
+      0 5px 7px rgba(0, 0, 0, 0.4), 
+      0 10px 15px rgba(0, 0, 0, 0.4), 
+      0 15px 22px rgba(0, 0, 0, 0.4), 
+      0 20px 30px rgba(0, 0, 0, 0.4); 
+    cursor: pointer;
+}
+
+.slide-button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+.slide-button:active {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: translateY(2px);
+}
+
+.description {
+    font-size: 17px;
+}
+
+.products {
+    margin-top: 300px;
+    margin-right: 0
+    ;
+}
+
+#landing-page-produc-title {
+    color: #000000;
+}
+
+.collections-title {
+    text-align: center;
+}
+
+.collections-title h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.landing-page-products-img:hover {
+    transform: scale(1.06);
+    transition: transform 0.1s ease;
+}
+
+.store-description {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.store-description p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 70px;
+}
+
+.collection-nav {
+    position: relative;
+    bottom: 340px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+
+  font-size: 40px;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 
+      0 5px 7px rgba(0, 0, 0, 0.4), 
+      0 10px 15px rgba(0, 0, 0, 0.4), 
+      0 15px 22px rgba(0, 0, 0, 0.4), 
+      0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.nav-button:hover {
+    transform: scale(1.06);
+    transform: translateY(-2px);
+}
+
+.nav-button:active {
+    transform: scale(0.9);
+    transform: translateY(2px);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+
+  font-size: 40px;
+}
+
+.page-footer {
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page-footer h3 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.page-footer h4 {
+    font-size: 30px;
+}
+
+.icons-div {
+    margin-top: 22px;
+    margin-bottom: 17px;
+}
+
+.before-footer-image {
+    background-image: url('./Components/Media/nike.jpg');
+    object-fit: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.before-footer-image div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: white;
+    margin-left: 35px;
+}
+
+.before-footer-image div h3 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.before-footer-image div p {
+    font-weight: bold;
+}
+
+.featured-button {
+    width: 100px;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-family: "Exo 2", sans-serif;
+}
+
+
+.featured-button:hover {
+    transform: scale(1.04);
+}
+
+.featured-button:active {
+    transform: scale(0.8);
+}
+
+
+
+.carousal-text {
+    position: relative;
+    right: 150px;
+    bottom: 140px;
+    text-align: left;
+    text-shadow: 1px 1px 2px black, 0 0 3px rgb(0, 0, 0), 0 0 7px rgb(0, 0, 0);
+}
+
+.carousal-text h3 {
+    font-size: 60px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
